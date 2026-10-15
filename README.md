@@ -82,7 +82,7 @@ Three things I took from this. The hosted open models are usable: Kimi K2 and GL
 You need Node 22 or newer, git, the GitHub CLI signed in, Claude Code installed, an API key for whichever model you pick (`ANTHROPIC_API_KEY` for Claude, `OPENROUTER_API_KEY` for the open models, nothing for Ollama), and a project with a dev server.
 
 ```sh
-git clone https://github.com/Abhyuday98/greenroom && cd greenroom
+git clone https://github.com/samotherguy/greenroom && cd greenroom
 cp example/greenroom.config.json . && cp example/models.json . && cp example/allowed.txt . && cp example/model.txt .
 # edit greenroom.config.json (worktree path, base branch, preview command, tiers) and PROMPT.bare.md (your project map)
 
@@ -95,7 +95,7 @@ sudo tailscale serve --bg --https=8443 http://127.0.0.1:4400
 
 `example/greenroom.service` is a systemd user unit; enable linger so it survives logout. Add each person's login to `allowed.txt`, one per line. No restart needed.
 
-If you use Claude Code, the `greenroom` plugin in [Abhyuday98/skills](https://github.com/Abhyuday98/skills) does all of this for the repo you are in: `/greenroom:setup "Studio name" --owner You --allow you@github`. One clone serves every project on the machine; each repo gets its own `studio/` folder, playground, service and port.
+If you use Claude Code, the `greenroom` plugin in [samotherguy/skills](https://github.com/samotherguy/skills) does all of this for the repo you are in: `/greenroom:setup "Studio name" --owner You --allow you@github`. One clone serves every project on the machine; each repo gets its own `studio/` folder, playground, service and port.
 
 ## Keys
 

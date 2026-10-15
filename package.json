@@ -6,5 +6,5 @@
   "bin": { "greenroom": "server.mjs" },
   "engines": { "node": ">=22" },
   "license": "MIT",
-  "repository": "github:Abhyuday98/greenroom"
+  "repository": "github:samotherguy/greenroom"
 }
